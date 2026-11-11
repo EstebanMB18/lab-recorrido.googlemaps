@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/hero_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TUTORMAPS  ·  LABORATORIO ANDROID"
+                android:textColor="#D7EAFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Encuentra tu tutor y planea tu ruta"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="GPS + Google Maps Intents + recorridos con varias paradas"
+                android:textColor="#E5F2FF"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01  TU UBICACIÓN"
+                android:textColor="#234C87"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtEstadoUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ubicación de demostración: Bogotá"
+                android:textColor="#263B53"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btnObtenerGps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Obtener mi ubicación GPS"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btnDemo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar ubicación de demostración"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02  PLANEA TU RECORRIDO"
+                android:textColor="#234C87"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/txtTutorCercano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#263B53"
+                android:textSize="14sp" />
+            <Spinner
+                android:id="@+id/spinnerTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+            <Button
+                android:id="@+id/btnCercano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ir al tutor más cercano"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btnRutaCompleta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Planear recorrido por todos los tutores"
+                android:textAllCaps="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="La distancia se estima en línea recta. Google Maps calcula los caminos y muestra opciones según el transporte."
+                android:textColor="#62748A"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:text="03  DOCENTES DISPONIBLES"
+            android:textColor="#234C87"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:id="@+id/contenedorTutores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="#EAF2FC"
+            android:text="Aviso: docentes y ubicaciones de ejemplo, creados solo para probar el laboratorio. No representan personas o tutorías reales."
+            android:textColor="#53677E"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
