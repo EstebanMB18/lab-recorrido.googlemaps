@@ -9,3 +9,5 @@
 .DS_Store
 app/build/
 *.apk
+
+**/local.properties
